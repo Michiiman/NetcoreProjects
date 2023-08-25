@@ -1,7 +1,7 @@
 namespace Core.Entities;
 
-public class Producto{
-    public int Id { get; set;}
+public class Producto:BaseEntity
+{   
     public int CodInterno{ get; set;}
     public string Nombre { get; set;}
     public int StockMin{ get; set;}
@@ -10,6 +10,6 @@ public class Producto{
     public double ValorVta { get; set;}
 
     public ICollection<Persona> Personas = new HashSet<Persona>();
-    public ICollection<ProductoPersona> ProductoPersonas{ get; set;}
+    public ICollection<ProductoPersona> ProductosPersonas{ get; set;}
     
 }   

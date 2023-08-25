@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/apolT01-036/Documents/NetCore/tienda/Core/Core.csproj",
+      "projectUniqueName": "/home/apolT01-036/Documents/NetcoreProjects/tienda/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "/home/apolT01-036/Documents/NetCore/tienda/Core/Core.csproj",
+      "projectPath": "/home/apolT01-036/Documents/NetcoreProjects/tienda/Core/Core.csproj",
       "packagesPath": "/home/apolT01-036/.nuget/packages/",
-      "outputPath": "/home/apolT01-036/Documents/NetCore/tienda/Core/obj/",
+      "outputPath": "/home/apolT01-036/Documents/NetcoreProjects/tienda/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/apolT01-036/.nuget/NuGet/NuGet.Config"

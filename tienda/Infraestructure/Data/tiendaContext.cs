@@ -1,3 +1,4 @@
+using System.Reflection;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 namespace Infraestructure.Data;
@@ -15,5 +16,13 @@ public class TiendaContext : DbContext
     public DbSet<Region> Regiones { get; set; }
     public DbSet<TipoPersona> TipoPersonas { get; set; }
     public DbSet<ProductoPersona> ProductoPersonas { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        
+        // modelBuilder.Entity<ProductoPersona>().HasKey(p=>new{p.IdProductoFk,p.IdPersonaFk});
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    }
 
 }
